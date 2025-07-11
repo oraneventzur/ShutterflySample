@@ -18,43 +18,6 @@ The primary goal of this repository is to showcase a robust, scalable, and highl
 - **Bounded Canvas**: Images are constrained within the canvas area and cannot be dragged off-screen or over the UI bars.
 
 
-## Architectural Blueprint
-
-This project is built upon a foundation of **Clean Architecture** principles, ensuring a separation of concerns, scalability, and high testability.
-
-+------------------------------------------------------+
-|                    PRESENTATION LAYER                |
-|       (Android Framework, Jetpack Compose, UI)       |
-|                                                      |
-| +--------------------------------------------------+ |
-| |                  ViewModel (MVVM)                | |
-| +--------------------------------------------------+ |
-+------------------------|-----------------------------+
-| (Depends on)
-V
-+------------------------------------------------------+
-|                     DOMAIN LAYER                     |
-|            (Core Business Logic & Rules)             |
-|                                                      |
-|  +-----------------+   +--------------------------+  |
-|  |   Use Cases     |   |   Models (ImageOnCanvas) |  |
-|  +-----------------+   +--------------------------+  |
-|  |                 |   |   Repository Interface   |  |
-|  +-----------------+   +--------------------------+  |
-+------------------------|-----------------------------+
-| (Depends on)
-V
-+------------------------------------------------------+
-|                       DATA LAYER                     |
-|           (Data Sources, Implementations)            |
-|                                                      |
-|     +------------------------------------------+     |
-|     |     Repository Implementation (Local)    |     |
-|     +------------------------------------------+     |
-+------------------------------------------------------+
-
-
-
 ### Key Architectural Patterns
 
 - #### Model-View-ViewModel (MVVM)
