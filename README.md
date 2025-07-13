@@ -58,7 +58,7 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repository:
    ```sh
-   git clone [https://github.com/your-username/android-image-editor.git](https://github.com/your-username/android-image-editor.git)
+   git clone [https://github.com/oraneventzur/ShutterflySample.git](https://github.com/oraneventzur/ShutterflySample.git)
 
 2. Open the project in the latest stable version of Android Studio.
 3. Let Gradle sync and download the required dependencies.
